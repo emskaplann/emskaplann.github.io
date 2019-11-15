@@ -173,7 +173,6 @@ playBtn.addEventListener('click', () => {
     mainCtn.append(playDiv)
         startGameForm.addEventListener('submit', (event) => {
         event.preventDefault()
-        // debugger
         let user = document.getElementById('user-input').value
         let diff = event.target.difficulty.value
         fetch("https://calm-ocean-20734.herokuapp.com/users", {
@@ -212,7 +211,6 @@ function incrementSeconds(seconds, timer){
       // console.log(gamesTimeArr)
 
     timerRank.innerText = index + 1
-
     if (index > -1) {
        gamesTimeArr.splice(index, 1);
     }
@@ -232,7 +230,6 @@ async function fetchWords(words, diff) {
                 } else {
                   words.push(word.toLowerCase())
                 }
-                // debugger
             })
         }
     })
@@ -359,13 +356,11 @@ function renderGame(words, diff){
             let index = gamesScoreArr.indexOf(parseInt(score.innerText))
 
             scoreRank.innerText = index + 1
-
             if (index > -1) {
                gamesScoreArr.splice(index, 1);
             }
             // 'remove' animation (animation taking too long, fast typers can't elimate next word)
               animateCSS(items[0], 'fadeOutUpBig', function() {
-                // debugger
                 items[0].remove()
               })
               inputField.reset()
@@ -385,7 +380,6 @@ function renderGame(words, diff){
     statDiv.setAttribute('style', 'padding-left: 100px;')
     mainCtn.append(gameDiv, inputField)
     statDiv.prepend(scoreDiv, timeDiv, quitBtn)
-    // debugger
     // auto-click on input inputField
     let inputTag = document.getElementById('word')
     inputTag.focus()
@@ -414,10 +408,8 @@ function renderGame(words, diff){
     // increasing speed based on time
     function increaseSpeed() {
         let currentTime = document.getElementById('time-second').innerText
-        // debugger
         // checking time with - if else - logic and changing speed based on that
           if (parseInt(currentTime) == 30) {
-            // debugger
               animateCSS(gameDiv, 'flash', function() {
                 })
               clearInterval(wordInt)
@@ -440,7 +432,6 @@ function renderGame(words, diff){
 
 // put 'word' into a 'div'
 function rainWord(word, gameDiv, score, wordInt, cancelTimer, diff, fast, faster, fastest) {
-    // debugger
     let wordDiv = document.createElement('div')
     wordDiv.id = 'word-animate'
     wordDiv.className = 'word-container faster'
@@ -485,6 +476,8 @@ function myMove(wordDiv, wordInt, cancelTimer, diff, fast, faster, fastest) {
       quitBtn.dataset.id = 1
       quitBtn.addEventListener('click', () => {
           intArray.forEach(clearInterval);
+          gamesScoreArr = []
+          gamesTimeArr = []
           endGame()
       })
     }
@@ -506,6 +499,8 @@ function myMove(wordDiv, wordInt, cancelTimer, diff, fast, faster, fastest) {
             item.dataset.id = 1
         })
         intArray.forEach(clearInterval);
+        gamesScoreArr = []
+        gamesTimeArr = []
         endGame()
       } else {
         pos++
@@ -518,7 +513,6 @@ function endGame() {
     let score = document.getElementById('score-2').innerText
     let time = document.getElementById('time-second').innerText
     let userId = document.getElementById('stat-container').firstElementChild.dataset.id
-    // debugger
     fetch('https://calm-ocean-20734.herokuapp.com/games', {
         method: "POST",
         headers: {
