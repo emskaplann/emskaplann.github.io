@@ -1,0 +1,58 @@
+#game-container {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    background: black;
+}
+.footer{
+  position: relative;
+  height: 500px;
+}
+.img-bottom{
+  position: absolute;
+  bottom: 5px;
+}
+.rank-list{
+ border: 1px solid black;
+ width: 550px;
+ height: 500px;
+ overflow: scroll;
+}
+
+.sidebar-heading{
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+.list-group-item{
+   padding: 0.75em 1em !important;
+   padding-right: 5em !important;
+}
+.card{
+  width: 500 !important;
+}
+
+#word-animate {
+    /* width: 100px; */
+    /* height: 50px; */
+    /* border-radius: 50% / 10%; */
+    position: absolute;
+    text-align: center;
+    /* background-color: blue; */
+    /* padding: 10px; */
+    /* margin: 10px; */
+}
+
+#text-container {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h3 {
+    color: white;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+  }
+
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('./digital-7.regular.ttf');
+}
