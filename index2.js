@@ -57,6 +57,8 @@ rootDiv.innerHTML = `
                               <h1 id="header2" class="project-title header1">Word-Tetris</h1>
                               <p class="project-description">A game that helps individuals to improve their typing skills.</p>
                               <a href="word-tetris/wtIndex.html" class="project-link">view project</a>
+                              <br>
+                              <a target="_blank" href="https://expo.io/@emskaplann/word-tetris" class="project-link">view mobile in expo</a>
                           </div>
                       </div>
                   </div>
