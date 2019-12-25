@@ -70,8 +70,6 @@ rootDiv.innerHTML = `
                 <a href="https://github.com/emskaplann" target="_blank" class="footer-links">GitHub</a>
                 <a href="https://twitter.com/sancar_kaplan" target="_blank" class="footer-links">Twitter</a>
                 <a href="https://www.linkedin.com/in/emirhan-kaplan/" target="_blank" class="footer-links">Linkedin</a>
-            </div>
-            <div class="wrapper-list-links">
                 <a href="https://medium.com/@emskaplann" target="_blank" class="footer-links">Medium</a>
                 <a href="https://www.behance.net/sencerkaplan" target="_blank" class="footer-links">Behance</a>
                 <a href="https://www.instagram.com/ems_kpln/" target="_blank" class="footer-links">Instagram</a>
