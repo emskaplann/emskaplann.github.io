@@ -42,7 +42,7 @@ rootDiv.innerHTML = `
                               </div>
                               <h1 id="header2" class="project-title header1">ToDo App</h1>
                               <p class="project-description">A project management tool that allows students to track the progress and completion of their projects.</p>
-                              <a href="/work/igotchu" class="project-link">view project</a>
+                              <a href="to-do-app/public/index.html" class="project-link">view project</a>
                           </div>
                       </div>
                   </div>
