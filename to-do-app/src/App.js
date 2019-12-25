@@ -75,7 +75,7 @@ class App extends Component {
         }
 
       </Navbar>
-      {this.state.token && this.state.projects[0] ? this.showSideNavWithMain(this.props) : <LoginPage parent={this} />}
+      {this.state.token ? this.showSideNavWithMain(this.props) : <LoginPage parent={this} />}
     </>
   }
 }
