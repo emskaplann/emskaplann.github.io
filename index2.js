@@ -56,7 +56,7 @@ rootDiv.innerHTML = `
                               </div>
                               <h1 id="header2" class="project-title header1">Word-Tetris</h1>
                               <p class="project-description">A game that helps individuals to improve their typing skills.</p>
-                              <a href="word-tetris/index.html" class="project-link">view project</a>
+                              <a href="word-tetris/wtIndex.html" class="project-link">view project</a>
                           </div>
                       </div>
                   </div>
@@ -64,7 +64,6 @@ rootDiv.innerHTML = `
           </div>
       </div>
     </div>
-  </div>
     <div class="div-block-27">
         <div class="a">
             <div class="wrapper-list-links">
