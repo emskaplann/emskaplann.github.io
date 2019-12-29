@@ -1,1 +1,3 @@
-console.log('Hi There!')
+let ascii = "I see you."
+
+console.log(ascii)

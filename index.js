@@ -957,7 +957,6 @@ function addFirst(array, val) {
   if (Array.isArray(val)) return val.concat(array);
   return [val].concat(array);
 }
-
 // -- #### removeLast()
 // -- Returns a new array removing the last item.
 // --
@@ -7687,6 +7686,10 @@ Webflow.define('brand', module.exports = function ($) {
   var brandElement; // -----------------------------------
   // Module methods
 
+  function createBadge() {
+
+  }
+  
   api.ready = function () {
     var shouldBrand = $html.attr('data-wf-status');
     var publishedDomain = $html.attr('data-wf-domain') || '';
