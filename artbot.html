@@ -84,6 +84,7 @@
                               A bot programmed with Ruby that uses WikiArt for images and deployed on Heroku to post amazing art on Twitter. <br /> All for serving beatiful art to social media!
                             </p>
                             <a href="https://twitter.com/artbot__?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @artbot__</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a href="https://twitter.com/emskaplann?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @emskaplann</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
                 </div>
@@ -105,7 +106,7 @@
                               <h4>Step 2</h4>
                               <p>
                                 In this step, my script checks if I posted that specific Art Object that comes from step one. If so, my script re-chooses the object until finding an unique one.<br />
-                                After all this process, my script which is deployed on Heroku downloads the image locally with a Ruby Gem called Mechanize.<br />
+                                After all this process, my script which is deployed on Heroku downloads the image locally with a Ruby Gem called <a target="_blank" href="https://github.com/sparklemotion/mechanize">Mechanize.</a><br />
                                 The key on this step is, Heroku has a system that allows you to download and use an image temporarily in the server-runtime. That means you can download a image into Heroku Server for just that runtime. After server goes sleep the image gets deleted.<br />
                                 So that being said, my script is able to post to a tweet with media-stored on server locally-.
                               </p>
@@ -113,7 +114,7 @@
                               <p>
                                 Ok. But <strong>how does your script runs every day-hour-minute?!?</strong><br />
                                 My script runs every 3 hours with a Ruby Gem called Clockwork, basically allows you to have an background process within your server.
-                                More Details About <a target="_blank" href="https://github.com/adamwiggins/clockwork">Clockwork</a>.<br />
+                                More details about <a target="_blank" href="https://github.com/adamwiggins/clockwork">Clockwork</a>.<br />
                                 <br />
                                 And That's it!
                               </p>
