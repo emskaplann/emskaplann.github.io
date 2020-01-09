@@ -20,7 +20,7 @@ function shuffle(array) {
 // eventListener for 'Home'
 homeBtn.addEventListener('click', () => {
     statDiv.innerHTML = ""
-    mainCtn.innerHTML = `<h1>Welcome</h1>
+    mainCtn.innerHTML = `<h1>Welcome!</h1>
     <p>Rules: See how fast you can type! Enter the right word before the word touches the bottom.</p>
     <div class="footer">
       <div class="img-bottom">
