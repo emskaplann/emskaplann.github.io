@@ -221,6 +221,7 @@ async function fetchWords(words, diff) {
 
     let res = await fetch(url)
     let response = await res.json()
+    console.log(response)
     response.articles.forEach(article => {
         if (article.description != null) {
             article.description.split(" ").forEach(word => {
