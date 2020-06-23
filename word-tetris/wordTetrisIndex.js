@@ -219,22 +219,38 @@ function incrementSeconds(seconds, timer){
 // fetching words before start of game
 async function fetchWords(words, diff) {
 
-    let res = await fetch(url)
-    let response = await res.json()
-    console.log(response)
-    response.articles.forEach(article => {
-        if (article.description != null) {
-            article.description.split(" ").forEach(word => {
-                word = word.replace(/[^a-zA-Z0-9 -]/g,"")
-                if( word == "" || word == " " || word == "--" ){
+    // let res = await fetch(url)
+    // let response = await res.json()
+    // console.log(response)
+    // response.articles.forEach(article => {
+    //     if (article.description != null) {
+    //         article.description.split(" ").forEach(word => {
+    //             word = word.replace(/[^a-zA-Z0-9 -]/g,"")
+    //             if( word == "" || word == " " || word == "--" ){
 
-                } else {
-                  words.push(word.toLowerCase())
-                }
-            })
-        }
-    })
+    //             } else {
+    //               words.push(word.toLowerCase())
+    //             }
+    //         })
+    //     }
+    // })
     // starts game
+    words = ["upon","lack","be","stood","acres","whispered", "bent","why","outside","suddenly","willing","exactly", "general","cool","either","forest","shells","hope","space","shall","wrapped","develop","wealth","equal","rock","passage","body","parallel","zoo","lonely","jump","remain","porch","once","favorite","design","aloud","continued","pocket","hunt","affect","hundred",  
+    "on","clothing","spent","explanation","progress","fast",
+    "education","whose","practical","trail","somewhere","fur",
+    "white","loud","felt","begun","sound","able",
+    "getting","speech","movie","how","box","therefore",
+    "horse","there","thin","specific","fat","dozen",
+    "lose","arm","be","golden","location","sky",
+    "tone","lie","instrument","soldier","introduced","building",
+    "mirror","wish","kill","slave","vertical","greatly",
+    "had","know","add","believed","stood","brick",
+    "you","rope","decide","begun","attached","journey",
+    "car","wash","modern","silly","support","empty",
+    "halfway","library","opinion","toward","headed","long",
+    "smell","ocean","cook","breathe","practical","necessary",
+    "double","rod","native","around","plant","frighten",
+  ]
     renderGame(words, diff)
 }
 
